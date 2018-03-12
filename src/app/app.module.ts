@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 import { MyDataService } from "./my-data.service";
 import { Temp1Component } from './temp1/temp1.component';
 import { Temp2Component } from './temp2/temp2.component';
@@ -20,6 +21,7 @@ import { Temp2Component } from './temp2/temp2.component';
   imports: [
     BrowserModule,
     HttpModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path:'temp1',
